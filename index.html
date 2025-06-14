@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRISM AI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-sans">
+  <div class="min-h-screen p-4">
+    <header class="flex justify-between items-center mb-6">
+      <h1 class="text-4xl font-bold">PRISM AI</h1>
+      <button onclick="toggleDarkMode()" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Dark Mode</button>
+    </header>
+
+    <main class="flex flex-col items-center">
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">🧠 Analyse</h2>
+          <p>Texte, Bilder, PDFs und Daten mit Klarheit analysieren.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">💬 Argumentation</h2>
+          <p>Konkrete Textstellen zitieren, strukturieren, bewerten.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">🎨 Bild-Intelligenz</h2>
+          <p>Stilvolle, realistische Bilder analysieren & generieren.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">📁 Datei-Upload</h2>
+          <p>Dokumente, Fotos und PDFs einsetzen & bewerten lassen.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">📐 Modular</h2>
+          <p>Immer im Denkstil: Problem → Ursache → Optionen → Empfehlung.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-4 rounded shadow-lg w-72">
+          <h2 class="text-xl font-semibold mb-2">🌐 Recherche</h2>
+          <p>Online suchen, Quellen prüfen, fundierte Antworten geben.</p>
+        </div>
+      </section>
+
+      <section class="w-full max-w-3xl">
+        <div class="relative">
+          <textarea rows="5" placeholder="Frag PRISM AI…" class="w-full p-4 rounded-lg shadow-lg dark:bg-gray-800 dark:text-white bg-white text-gray-900 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <button class="absolute bottom-2 right-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">+</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center mt-10 text-gray-500 text-sm">
+      &copy; 2025 PRISM AI – Designed for clarity, privacy & precision.
+    </footer>
+  </div>
+</body>
+</html>
